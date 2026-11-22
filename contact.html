@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INK PRINT | اطلب الآن وتواصل</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <img src="assets/images/my-logo.jpeg" alt="شعار INK PRINT" class="brand-logo" />
+        <div>
+          <span class="brand-name">INK PRINT</span>
+          <span class="brand-tagline">منتجك يستحقُ هويّةً تُميّزه.</span>
+        </div>
+      </a>
+      <nav class="nav-links" aria-label="التنقل الرئيسي">
+        <a href="index.html">الرئيسية</a>
+        <a href="services.html">الخدمات</a>
+        <a href="contact.html" class="active">اطلب الآن وتواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">الطلبات والاستفسارات</span>
+        <h1>اطلب وحدد مقاساتك</h1>
+        <p>عبّئ بياناتك والمقاسات المطلوبة أدناه، وسيتم تجهيز طلبك وإرساله مباشرة عبر واتساب.</p>
+      </div>
+
+      <div class="contact-grid">
+        <aside class="info-box">
+          <h2>بيانات التواصل المباشر</h2>
+          <div class="info-item">
+            <span class="info-label">اسم النشاط</span>
+            <span class="info-value">INK PRINT</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">العنوان</span>
+            <span class="info-value">مكة المكرمة</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">رقم الواتساب</span>
+            <span class="info-value">0582883128</span>
+          </div>
+          <div style="margin-top: 20px;">
+            <a href="https://wa.me/966582883128" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="width: 100%;">
+              محادثة واتساب سريعة
+            </a>
+          </div>
+        </aside>
+
+        <div class="form-box">
+          <h2>نموذج تفاصيل الطلب والمقاسات</h2>
+          <form id="orderForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="clientName">اسم العميل أو المشروع</label>
+                <input type="text" id="clientName" placeholder="مثال: سارة / مقهى سحابة" required />
+              </div>
+
+              <div class="form-group">
+                <label for="clientPhone">رقم الجوال للتواصل</label>
+                <input type="tel" id="clientPhone" placeholder="05xxxxxxxx" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="serviceType">نوع الخدمة</label>
+                <select id="serviceType" required>
+                  <option value="طباعة الأكواب الورقية">طباعة الأكواب الورقية</option>
+                  <option value="البوكسات والتغليف المخصص">البوكسات والتغليف المخصص</option>
+                  <option value="تجهيز الهوية التجارية للمنتجات">تجهيز الهوية التجارية للمنتجات</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="dimensions">المقاسات المطلوبة</label>
+                <input type="text" id="dimensions" placeholder="مثال: كوب 8 أونص أو بوكس 20×15×8 سم" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="quantity">الكمية التقريبية</label>
+              <input type="text" id="quantity" placeholder="مثال: 500 حبة أو 1000 حبة" required />
+            </div>
+
+            <div class="form-group">
+              <label for="notes">ملاحظات إضافية (الألوان، نوع الخامة، وجود تصميم جاهز)</label>
+              <textarea id="notes" rows="4" placeholder="اكتب أي تفاصيل إضافية تخص طلبك..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              إرسال الطلب والمقاسات عبر واتساب
+            </button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <span><strong>INK PRINT</strong> — منتجك يستحقُ هويّةً تُميّزه.</span>
+      <span>مكة المكرمة • واتساب: <a href="https://wa.me/966582883128" target="_blank" rel="noopener noreferrer">0582883128</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
